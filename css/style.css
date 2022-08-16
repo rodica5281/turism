@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=Coiny&family=Fredoka+One&family=Montserrat&family=Nunito:wght@600&family=Splash&display=swap');@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=Coiny&family=Lobster&family=Modak&family=Pacifico&family=Splash&family=Square+Peg&display=swap');
+/* tot va avea asa proprietati */
+*{
+    box-sizing: border-box;
+}
+header {
+    background:  #01261C;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    padding: 15px 15px 5px 15px;
+}
+
+.logo {
+    height: 50px;
+   }
+navbar a{
+    color: #ecfbea;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: 'Coiny', cursive;  
+}
+navbar a:hover{
+   color:  #492821;
+}
+navbar{
+    
+    margin-left: 30px;
+    margin-bottom: 6px;
+    display: inline-block;
+    overflow: auto;
+   
+}
+.link-index{
+    color: #492821;
+    text-decoration: underline 2px #492821;
+   
+}
+.link-index:hover{
+    color: #ecfbea;
+    text-decoration: underline 2px #ecfbea;
+   
+}
+.centered{
+    text-align: center;
+}
+body {
+    margin: 0px;
+    background: #ecfbea;
+    font-family: 'Archivo', sans-serif;
+    font-size: 18px;
+    color: #492821;
+   
+}
+h1{
+    font-family: 'Coiny', cursive; 
+    /* de 4 ori mai mare decat dim de baza */
+    font-size: 150%;
+    color:  #01402E;
+    /* text-shadow: 2px 2px gray 2px; */
+    /* border-left: solid #492821; */
+    background-color: #b6dbb1cb;
+    letter-spacing: 2px;
+    border-radius: 5px;
+}
+h2{
+    margin: 0px;  
+    font-family: 'Splash', cursive;
+    /* de 4 ori mai mare decat dim de baza */
+    font-size: 300%;
+    color:  #01402E;
+    letter-spacing: 2px;
+}
+h3,h4{
+    margin: 0px;
+    font-family: 'Coiny', cursive;
+}
+p{
+    line-height: 150%;
+text-indent: 30px;
+}
+main {
+    min-height: 100vh;
+}
+
+section {
+    padding: 90px 15%;
+    
+    
+}
+
+/* footer {
+    min-height: 80px;
+    background: #01261C;
+    text-align: right;
+    padding-top: 35px;
+    color: #ecfbea;
+    padding-right: 35px;} */
+    /* font-family: 'Fredoka One', cursive; */
+    /* font-family: 'Archivo', sans-serif; */
+    
+footer{
+    min-height: 80px;
+    background-color: #01261C;
+    color: #ecfbea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.harta{
+    width: 100%;
+    height: 40vh;
+    border-radius: 5px;
+}
+#index{
+    background: linear-gradient(#5e745c5a,#a9e1a09e), url("../poze/harta0.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    text-align: center;
+}
+.index-info{
+    margin-top: 20vh;
+      
+    padding: 5px 50px;
+    font-size: 130%;
+    border-radius: 10px;
+    background: #a3d39c7e; 
+    border: solid 2px #ecfbea;
+
+    /* blocul ocupa doar spatiul cat e textul */
+    display: inline-block;
+}
+
+.index-info h1{
+    font-family: 'Splash', cursive;
+    /* de 4 ori mai mare decat dim de baza */
+    font-size: 400%;
+    color:  #01402E;
+    /* text-shadow: 2px 2px gray 2px; */
+  
+}
+.boxa{
+    position: fixed;
+    top: 80px;
+    left: 3%;
+    padding: 5px 20px;
+    /* display: inline-block; */
+    /* border: #fafffe solid 3px; */
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+    /* line-height: 150%; */
+    border-radius: 10px;
+    /* margin: 10px; */
+    text-align: center;
+}
+.button {
+    background-color: #01261C; /* Green */
+    border: none;
+    width: 120px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    /* font-family: 'Coiny', cursive;   */
+    border-radius: 5px;
+  }
+  .button a{
+    color: #ecfbea;
+    text-decoration: none;
+}
+
+ul{
+    list-style-type:decimal;
+    list-style-image: linear-gradient(rgb(160, 235, 160), rgb(12, 90, 70)); 
+}
+.galerie {
+    margin-top: 1%;
+    /* height: 90vh; */
+    /* border: 2px red solid; */
+    margin-bottom: 30px;
+   
+    /*implicit 
+    display: block; */
+    display: flex;
+/* img vin din rand nou, daca nu au loc */
+    flex-wrap: wrap;
+    /* implicit  */
+    flex-direction: row;
+      /* flex-direction: column; */
+    /* valorile    centered, flex-end, flex-start,space-around, space-evenly,space-between ...*/
+    /* alinierea pentru axa sprincipala */
+    justify-content:space-evenly;
+    /* alinierea pentru axa secundara
+     cu valorile flex-start, flex-end, center, */
+    align-items: center;
+
+    /* folosim cand sunt mai multe randuri */
+    align-content: center;
+    /* margine intre elementele copii din acest parinte */
+    gap:20px;
+    z-index: -3;
+  
+}
+.galerie img{
+    width: 180px;
+    height: 250px;
+    /* margin-left: 5px; */
+    /* aratam imag , fara a strica calitatea
+    dar se taie din calitate
+    dar trebuie sa fie indicata lungimea si inaltimea imaginei */
+    object-fit: cover;
+    padding: 5px 5px;
+border-radius: 15px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.galerie img:hover{
+ 
+/* ZOOM */
+transform: scale(93%);
+}
+.row{
+    /* se calculeaza inaltimea , deoarece avem elemente flotante */
+overflow: auto;
+margin: 10px;
+
+}
+/* [class*="col"]                 contine col*/
+/* clasa care se incepe cu    col-
+vor contine proprietati comune */
+[class^="col-"] {
+    float: left;
+    padding: 0px 10px;
+    /* border-left: 3px solid #01402E; */
+}
+.col-25 {width: 25%;}
+.col-33 {width: 33.33%;}
+.col-40 {width: 40%;}
+.col-50 {width: 50%;}
+.col-60 {width: 60%;}
+.col-70 {width: 70%;}
+.col-80 {width: 80%;}
+.col-90 {width: 90%;}
+.col-100 {width: 100%;}
+.vframe{
+    width: 100%;
+    /* inaltimea va fi 30% din latime */
+    height: 30vw;
+    border: 5px solid #01261C;
+    border-radius: 5px;
+}
+.loc{
+    /* adaugam in elem parinte aceasta proprietate, 
+    deoarece avem imakginea(copil) flotant
+    si asa se va calcula corect imaltimea */
+    overflow: auto;
+    border-bottom:2px dashed #49282196;
+    margin-bottom: 15px;
+}
+.loc img{
+    /* facem img patrata */
+    height: 28vh;
+    width: 28vh;
+    object-fit: cover;
+    /* rotungim toate 4 colturi la 50% si primim un cerc */
+    border-radius: 50%;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.contacte, .cform{
+    border: 2px solid #49282145;
+    background-color: #a3d39c3e;
+    border-radius: 5px;
+    padding: 5px 5%;
+    height: 265px;
+    margin-bottom: 15px;
+    }
+.cform input,.cform textarea{
+    width: 100%;
+    font-size: 15px;
+    font-family: inherit;
+    margin-bottom: 10px;
+    padding: 4px 6px;
+   
+}
+.iconite{
+    font-size: 30px;
+    padding-right: 10px;
+}
+#hamburgher{
+    color: white;
+    font-size: 28px;
+    position: absolute;
+    right: 22px;
+    top: 24px;
+    cursor: pointer;
+    display: none;
+}
+/* media trebuie sa fie la sfirsitul fisierului */
+@media(max-width:800px)
+{
+    section{
+        padding: 90px 10px;
+    }
+    h1{
+        font-size: 120%;
+    }
+    h2{
+        font-size: 150%;
+    }
+    
+    p{
+        font-size: 80%;
+    }
+    .vframe{ height:75vw ;
+    }
+    navbar a{
+        display: none;
+    }
+    navbar.mobile a{
+        display: block;
+        text-align: center;
+        margin-top: 12px;
+    }
+
+    navbar{
+        display: block;
+        
+    }
+    #hamburgher{
+        display: block;
+    }
+    [class^="col-"] {
+      width: 100%; !important
+    }
+}
